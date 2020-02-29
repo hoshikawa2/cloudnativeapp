@@ -38,7 +38,9 @@ spec:
     targetPort: 80
 spec:
   ports:
-  - port: 80
+  - name: port1
+    port: 80
+    protocol: TCP
     targetPort: 80
   selector:
     app: cloudnativeapp
